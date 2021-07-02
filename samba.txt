@@ -1,0 +1,2 @@
+docker create -it -p 139:139 -p 445:445 --name smbsrv -v c:\tmp:/path1 dperson/samba \ -p -r -s "share;/path1;yes;no;no;" 
+docker start smbsrv
